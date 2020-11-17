@@ -108,5 +108,3 @@ if __name__ == "__main__":
         ng.callbacks.ModelSaver(config.TRAIN_SPE, trainer.context['saver'], log_prefix+'/snap'),
         ng.callbacks.SummaryWriter((config.VAL_PSTEPS//1), trainer.context['summary_writer'], tf.summary.merge_all()),
     ])
-    # launch training
-    trainer.train()
